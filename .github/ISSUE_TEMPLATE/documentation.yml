@@ -1,0 +1,26 @@
+name: Documentation improvement
+description: Propose a change to public documentation or repository guidance.
+title: "Docs: "
+labels: [documentation]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What should be improved?
+    validations:
+      required: true
+  - type: textarea
+    id: audience
+    attributes:
+      label: Intended audience
+      description: Who benefits from this change?
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy confirmation
+      options:
+        - label: This issue contains no secrets, credentials, client data, transcripts, patient data, or sensitive intake records.
+          required: true

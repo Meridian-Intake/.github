@@ -1,0 +1,34 @@
+name: Operational risk or process gap
+description: Report a non-sensitive process gap in repository standards or public artifacts.
+title: "Risk: "
+labels: [risk, process]
+body:
+  - type: markdown
+    attributes:
+      value: Do not include secrets, client records, protected health information, privileged material, or confidential operational details.
+  - type: textarea
+    id: risk
+    attributes:
+      label: Risk or gap
+      description: Describe the risk at a non-sensitive level.
+    validations:
+      required: true
+  - type: dropdown
+    id: domain
+    attributes:
+      label: Area
+      options:
+        - Privacy and data minimization
+        - Security and access control
+        - Intake boundaries
+        - Documentation accuracy
+        - Quality assurance
+        - Vendor or procurement readiness
+    validations:
+      required: true
+  - type: textarea
+    id: mitigation
+    attributes:
+      label: Suggested mitigation
+    validations:
+      required: false
