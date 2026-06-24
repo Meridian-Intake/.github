@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Business or procurement inquiry
+    url: https://meridianintake.ca
+    about: Contact Meridian for commercial, procurement, or partnership questions.
+  - name: Security concern
+    url: https://meridianintake.ca
+    about: Please use the security reporting process in SECURITY.md rather than a public issue.
